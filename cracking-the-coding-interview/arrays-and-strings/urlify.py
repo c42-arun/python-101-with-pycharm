@@ -15,6 +15,8 @@ def urlify(input_str, length):
 
 
 def shift_chars(char_arr, start_index, no_of_moves):
+    # range(start, end, step) -- does not include the end
+    # range(5, 0, -1) => "5, 4, 3, 2, 1"
     for i in range(len(char_arr) - 1, start_index + no_of_moves, -1):
         char_arr[i] = char_arr[i - no_of_moves]
 
